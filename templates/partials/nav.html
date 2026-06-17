@@ -3,16 +3,23 @@
 
 </style>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand navbar-expand-lg bg-body-tertiary" href="/">
-            <img src="" alt="Brawlable Logo" width="30" heigh="24" class="d-inline-block align-text-top">
+        <!-- Brand Logo and Name -->
+        <a class="navbar-brand" href="/">
+            <img src="" alt="Brawlable Logo" width="30" height="24" class="d-inline-block align-text-top" />
             Brawlable
         </a>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
 
-                <!-- BRAWLERS-->
+        <!-- Mobile Hamburger -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- BRAWLERS -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
@@ -43,14 +50,13 @@
                         <li><a class="dropdown-item" href="#">Hot Zone</a></li>
                         <li><a class="dropdown-item" href="#">Knockout</a></li>
                         <li><a class="dropdown-item" href="#">Gem Grab</a></li>
-                        <li><a class="dropdown-item" href="#">Limited Time Gamemodes</a></li>
+                        <li>
+                            <a class="dropdown-item" href="#">Limited Time Gamemodes</a>
+                        </li>
                     </ul>
                 </li>
 
-                <!-- MECHANICS -->
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Mechanics</a>
-                </li>
+                <!-- RESOURCES -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
@@ -62,7 +68,18 @@
                         <li><a class="dropdown-item" href="#">Tips & Tricks</a></li>
                     </ul>
                 </li>
+
+                <!-- MECHANICS -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mechanics</a>
+                </li>
             </ul>
+
+            <!-- Search Form on the right -->
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
         </div>
     </div>
 </nav>
